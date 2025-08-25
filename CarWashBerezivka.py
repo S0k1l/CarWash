@@ -9,7 +9,6 @@ from datetime import datetime, timedelta
 from dotenv import load_dotenv
 
 # --- ENV ---
-load_dotenv(dotenv_path="D:/web/python/main.env")
 API_TOKEN = os.getenv("API_TOKEN")
 DATABASE_URL = os.getenv("DATABASE_URL")
 
@@ -695,3 +694,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
