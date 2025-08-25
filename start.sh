@@ -3,4 +3,4 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-python bot.py
+uvicorn main:app --host 0.0.0.0 --port "$PORT"

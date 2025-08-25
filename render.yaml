@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: carwash
+    env: python
+    plan: free # or starter, depending on your choice
+    region: oregon # or frankfurt, etc.
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: ./start.sh
+    runtime: python
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: DATABASE_URL
+        sync: false # so you can set it manually in dashboard or via secrets
