@@ -14,3 +14,5 @@ services:
         value: 3.11.9
       - key: DATABASE_URL
         sync: false # so you can set it manually in dashboard or via secrets
+      - key: API_TOKEN
+        sync: false # so you can set it manually in dashboard or via secrets
